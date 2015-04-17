@@ -1,0 +1,203 @@
+﻿%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 最后更新:2014年10月11日
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+% moderncv version 1.5.1 (29 Apr 2013)
+
+\usepackage{DejaVuSansMono}
+\usepackage{footmisc}
+\usepackage{microtype}
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{pifont,amsfonts,amssymb}
+\nopagenumbers{}
+
+
+\usepackage[noindent]{ctex} %中文支持
+\setCJKmainfont{SimSun}
+% Refine quote
+
+% Proper alignment
+\usepackage[originalcommands]{ragged2e}
+\renewcommand*{\cvcomputer}[4]{%
+  \cvdoubleitem{#1}{\small\raggedright#2}{#3}{\small\raggedright#4}}
+
+
+\newenvironment{tightitemize}
+   {\begin{itemize}
+   \setlength{\parskip}{3pt}}
+   {\end{itemize}}
+\newcommand*{\myquote}[2]{%
+   \quote{\itshape #1 \\ \scshape \footnotesize #2}}
+
+
+% Proper alignment
+\usepackage[originalcommands]{ragged2e}
+\renewcommand*{\cvcomputer}[4]{%
+  \cvdoubleitem{#1}{\small\raggedright#2}{#3}{\small\raggedright#4}}
+
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[top=1cm,bottom=1cm,left=2cm,right=2cm]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+\name{王}{财勇}
+% All information in this block is optional, comment out any lines you don't need
+
+\title{\heiti  个人简历}
+\address{福建省厦门市思明区厦大学生公寓}{361005}
+%\address{中国科学院计算技术研究所}{海淀区, 北京市 100095}
+\phone[mobile]{(+86)~158~80278326}
+\email{xjwcy138@sina.cn}
+%\homepage{http://blog.csdn.net/xiamentingtao}
+%\social[twitter]{1442569339}
+\social[github]{xiamenwcy}
+\extrainfo{男,1990.11.03,籍贯：山西省介休市}
+
+%\photo[70pt][0.4pt]{photo.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+%\extrainfo{Power by \LaTeX  }                 % 可选项、如不需要可删除本行
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%   POSITION APPLIED（CAREER OBJECTIVE）
+%----------------------------------------------------------------------------------------
+\section{求职意向}
+%\subsection{求职意向}
+
+\cventry{2016年6月毕业}{意向行业：计算机,互联网,银行软件开发中心,通信}{应聘职位：研发工程师}{工作地点：广州,深圳，西安}{}{}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{教育背景}
+
+\cventry{2013---至今}{计算数学}{厦门大学}{硕士}{}{研究方向：计算机辅助几何设计与计算机图形学}{}  % Arguments not required can be left empty
+\cventry{2009---2013}{数学与应用数学}{新疆大学}{本科}{}{}{\textit{GPA: 3.85/5}}  \\% Arguments not required can be left empty
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{在校情况}
+\cventry{}{2013.09---至今}{厦门大学}{}{}{}{
+\begin{itemize}
+\setlength{\itemindent}{2em}
+ \item 担任班长一职，组织大家开展各项活动
+ \item 参加广东移动厦大领先之星俱乐部
+ \item 2014年7月初带队赴福建省漳州市东山岛开展暑期实践活动
+ \item 2014年7月21日至25日，赴合肥参加中国科技大学《计算机图形学》暑期课程
+ \item 2014 年12月3日至6日，赴深圳参加Siggraph Asia 2014 会议
+\end{itemize}}
+\section{实习经历}
+\cventry{}{2013.07.01---2013.08.15}{招商银行乌鲁木齐分行实习}{}{}{}{
+2013年暑假，我在招行乌鲁木齐分行友好北支行实
+习，负责银行社保卡业务的办理。任职期间，负责接待社保办理个人和单位，同时与社保局接洽，确保及时地为客户办理社保卡。工作之余，我还按时做工作总结，并提交主管领导，赢得了领导的好评。实习快结束时，我总结了前面工作的经验，
+为支行的社保业务设计了一套全新的工作流程，大大提升了工作的效率，并最终被评为优秀实习生。}\\
+\section{项目经历}
+%------------------------------------------------
+\subsection{福建省数学建模与高性能科学计算重点实验室}
+
+\cventry{2014.09---2015.04}{项目负责人}{张量积B样条曲面的自适应节点设置}{}{}{
+\begin{itemize}
+\setlength{\itemindent}{2em}
+%   \item 设计测试方法、搭建测试平台，编写自动化脚本，完成FFmpeg/X264 编码速度测试
+    \item 关键技术：三维网格的读入读出、最优化问题的L-BFGS方法求解、查询点的近似最近邻、最小二乘问题的求解
+    \item 编程语言：Visual C++, Microsoft Visual Studio 2008
+    \item 编程所用C++库：Openmesh、Cgal、Graphite、ANN、Eigen、libQGLViewer
+    \item 该项目使用Qt4编写GUI界面，依赖OpenGL完成了三维网格的绘制和可视化操作
+    \item 该项技术基于曲面的曲率等几何信息来自适应地设置节点线，从而可以更精确地拟合曲面
+    \item 项目主页：{\httplink{github.com/xiamenwcy/b-spline-knots-setting}}
+    \item 该项目是本人研究生以来的第一个项目,在老师的带领下,完成了项目的理论推导和C++实现，并最后撰写成论文。
+\end{itemize}
+}
+\section{其它经历}
+\cventry{2013.03---2015.1}{}{其他课程项目、研究}{}{}{}{
+\begin{itemize}
+\setlength{\itemindent}{2em}
+ \item 使用QT4完成txt文本基本功能的实现
+ \item 学习Git操作，开始用Github托管代码 {\httplink{github.com/xiamenwcy}}
+ \item 学习智能优化理论，使用MATLAB优化工具箱解决一些实际问题
+ \item 使用Latex编写个人简历
+ \item 阅读经典著作《Effective C++》、《Effective STL》
+ \item 创建个人博客{\httplink{blog.csdn.net/xiamentingtao}}，同时开始关注开源项目和最新科技
+ \item 学习Linux C/C++,
+ \item 学习R软件，并用R软件进行数学建模与数据处理
+\end{itemize}}
+%----------------------------------------------------------------------------------------
+%   AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{荣誉奖励}
+\cvitem{2009.09-2013.06}{连续四年获新疆大学基地班奖学金（每年奖励综合测评排名前1\%）}
+\cvitem{2011.9}{国家奖学金}
+\cvitem{2011.11}{全国大学生数学建模竞赛新疆赛区甲组三等奖}
+\cvitem{2012.12}{全国大学生数学建模竞赛新疆赛区甲组二等奖}
+\cvitem{2013.09}{以班级第一的成绩保送厦门大学数学科学学院}
+\cvitem{2014.12}{厦门大学优秀学生干部}
+\section{专业技能}
+\subsection{开发}
+\cvcomputer{语言}{C/C++(熟练)，Qt(熟练)，R(一般)，MATLAB(熟练)，SQL(熟练)}
+           {开发环境}{Microsoft Visual Studio 2008,Qt Creator,R studio,SQL Server 2008}
+\subsection{工具}
+\cvcomputer{办公}{ Microsoft Office, \LaTeX}
+ {操作系统}{Windows}
+\subsection{证书}
+\cvcomputer{英语}{ CET6(483)}
+ {计算机}{计算机二级证书}
+\cvcomputer{开车}{驾照C本}
+ {证券}{证券从业资格证书}
+\section{个人信息}
+\cvitem{兴趣爱好}{\begin{itemize}
+\setlength{\itemindent}{2em}
+ \item  计算机，漫游互联网，写博客，接触各种电子产品
+ \item  羽毛球，爬山，骑自行车，台球
+ \item  喜欢抗战片、纪录片、历史片，旅游
+\end{itemize}}
+\cvitem{自我评价}{\begin{itemize}
+\setlength{\itemindent}{2em}
+ \item  踏实，努力，有上进心，有责任心。
+ \item  沉稳、有耐心、意志坚定、心思缜密、做事周全。
+ \item  乐于分享，喜欢Team Work。
+ \item  自学能力强，勤于知识的梳理与总结。
+\end{itemize}}
+
+
+
+
+
+
+
+
+
+\end{document}
